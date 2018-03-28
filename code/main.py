@@ -2,7 +2,7 @@ import torch
 
 import utils
 from option import args
-from data import data
+from data_loader import DataCreator
 from trainer import Trainer
 
 torch.manual_seed(args.seed)
@@ -16,4 +16,3 @@ if checkpoint.ok:
         t.test()
 
     checkpoint.done()
-

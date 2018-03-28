@@ -3,7 +3,7 @@ from importlib import import_module
 from dataloader import MSDataLoader
 from  torch.utils.data.dataloader import default_collate
 
-class data:
+class DataCreator:
     def __init__(self, args):
         self.args = args
 
@@ -40,4 +40,3 @@ class data:
             **kwargs)
 
         return loader_train, loader_test
-
